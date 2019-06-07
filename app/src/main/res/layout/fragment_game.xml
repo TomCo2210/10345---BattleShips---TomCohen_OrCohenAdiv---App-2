@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/transperent_white"
+    android:paddingBottom="8dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp"
+    android:weightSum="1"
+    tools:context=".GameFragment">
+
+    <LinearLayout
+        android:id="@+id/ScreenTopFragmentSlot"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.30">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/PlayerBoard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:text="@string/your_board"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/boardTitlesSizes" />
+
+            <TextView
+                android:id="@+id/TurnTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0.25"
+                android:maxLines="2"
+                android:textAlignment="center"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/boardTitlesSizes"
+                tools:text="Computer's Turn" />
+
+            <TextView
+                android:id="@+id/scoreTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:text="@string/score"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/boardTitlesSizes" />
+
+            <TextView
+                android:id="@+id/Points"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:text="@string/_0_pts"
+                android:textColor="@color/Black"
+                android:textSize="24sp"
+                tools:text="0 Pts." />
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/playerBoardView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:columnWidth="@dimen/colWidth"
+            android:horizontalSpacing="@dimen/spacing"
+            android:numColumns="5"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="@dimen/spacing"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/PlayerBoard"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/OpponentBoardFragmentSlot"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.70">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:indeterminate="true"
+            android:indeterminateTint="#0081d7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/opponentBoardTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/opponentBoard"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/boardTitlesSizes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <GridView
+            android:id="@+id/opponentBoardView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:columnWidth="@dimen/colWidth"
+            android:horizontalSpacing="@dimen/spacing"
+            android:numColumns="5"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="@dimen/spacing"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/opponentBoardTitle" />
+
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/explosion"
+    android:oneshot="true">
+    <item android:drawable="@drawable/explosion01" android:duration="25" />
+    <item android:drawable="@drawable/explosion02" android:duration="25" />
+    <item android:drawable="@drawable/explosion03" android:duration="25" />
+    <item android:drawable="@drawable/explosion04" android:duration="25" />
+    <item android:drawable="@drawable/explosion05" android:duration="25" />
+    <item android:drawable="@drawable/explosion06" android:duration="25" />
+    <item android:drawable="@drawable/explosion07" android:duration="25" />
+    <item android:drawable="@drawable/explosion08" android:duration="25" />
+    <item android:drawable="@drawable/explosion09" android:duration="25" />
+    <item android:drawable="@drawable/explosion10" android:duration="25" />
+    <item android:drawable="@drawable/explosion11" android:duration="25" />
+    <item android:drawable="@drawable/explosion12" android:duration="25" />
+    <item android:drawable="@drawable/explosion13" android:duration="25" />
+    <item android:drawable="@drawable/explosion14" android:duration="25" />
+    <item android:drawable="@drawable/explosion15" android:duration="25" />
+    <item android:drawable="@drawable/explosion16" android:duration="25" />
+    <item android:drawable="@drawable/explosion17" android:duration="25" />
+    <item android:drawable="@drawable/explosion18" android:duration="25" />
+    <item android:drawable="@drawable/explosion19" android:duration="25" />
+    <item android:drawable="@drawable/explosion20" android:duration="25" />
+    <item android:drawable="@drawable/explosion21" android:duration="25" />
+    <item android:drawable="@drawable/explosion22" android:duration="25" />
+    <item android:drawable="@drawable/explosion23" android:duration="25" />
+    <item android:drawable="@drawable/explosion24" android:duration="25" />
+    <item android:drawable="@drawable/explosion25" android:duration="25" />
+    <item android:drawable="@drawable/explosion26" android:duration="25" />
+    <item android:drawable="@drawable/explosion27" android:duration="25" />
+    <item android:drawable="@drawable/explosion28" android:duration="25" />
+    <item android:drawable="@drawable/explosion29" android:duration="25" />
+    <item android:drawable="@drawable/explosion30" android:duration="25" />
+    <item android:drawable="@drawable/explosion31" android:duration="25" />
+    <item android:drawable="@drawable/explosion32" android:duration="25" />
+    <item android:drawable="@drawable/explosion33" android:duration="25" />
+    <item android:drawable="@drawable/explosion34" android:duration="25" />
+    <item android:drawable="@drawable/explosion35" android:duration="25" />
+    <item android:drawable="@drawable/explosion36" android:duration="25" />
+    <item android:drawable="@drawable/explosion37" android:duration="25" />
+    <item android:drawable="@drawable/explosion38" android:duration="25" />
+</animation-list>
